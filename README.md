@@ -7,7 +7,7 @@ Official code repository for the paper:
 
 [Junjie Chen, Junwei Lin, Hong Ren, Shengjie Liu, Yuming Fang, Feng Qian, Yifan Zuo]
 
-[<img src="D:\Paper Project\AIS_912\overview.png" alt="overview" style="zoom:50%;" />
+[<img src="[https://github.com/JUFE-SCI-Lab/ClickAmodalSeg/blob/main/overview.png]" alt="overview" style="zoom:50%;" />
 
 ### Abstract
 
