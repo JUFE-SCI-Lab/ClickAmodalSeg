@@ -1,0 +1,37 @@
+INTERACTIVE_MODELS_PATH: "./weights"
+EXPS_PATH: "/home/linjunwei/AIS_912/results"
+seed: 42
+
+# Evaluation datasets
+GRABCUT_PATH: "/mnt/data/linjunwei/data/GrabCut"
+BERKELEY_PATH: "/mnt/data/linjunwei/data/Berkeley"
+DAVIS_PATH: "/mnt/data/linjunwei/data/DAVIS"
+# DAVIS_SUBSET_PATH: "/media/cwlee/HDD1/datasets/InteractiveSegmentation/DAVIS_subset"
+COCO_MVAL_PATH: "/mnt/data/linjunwei/data/COCO_MVal"
+COCOA_PATH: "/mnt/data/linjunwei/AIS_data/COCOA"
+
+# Train datasets
+SBD_PATH: "/mnt/data/linjunwei/data/SBD"
+COCO_PATH: "/media/cwlee/HDD1/datasets/InteractiveSegmentation/COCO_LVIS"
+LVIS_v1_PATH: "/media/cwlee/HDD1/datasets/InteractiveSegmentation/COCO_LVIS"
+PASCALVOC_PATH: "/media/cwlee/HDD1/datasets/InteractiveSegmentation/PascalVOC"
+
+# You can download the weights for HRNet from the repository:
+# https://github.com/HRNet/HRNet-Image-Classification
+IMAGENET_PRETRAINED_MODELS:
+  HRNETV2_W18: "/media/cwlee/HDD1/Projects/MFP/weights/pretrained/hrnetv2_w18_imagenet_pretrained.pth"
+  HRNETV2_W32: "/media/cwlee/HDD1/Projects/MFP/weights/pretrained/hrnetv2_w32_imagenet_pretrained.pth"
+  MIT_B0: "/media/cwlee/HDD1/Projects/MFP/weights/pretrained/mit_b0.pth"
+  MAE_BASE: "/mnt/data/linjunwei/check-points/mae_pretrain_vit_base.pth"
+
+PRETRAINED_SIMPLECLICK_MODELS:
+  MAE_BASE: "/mnt/data/linjunwei/check-points/mae_pretrain_vit_base.pth"
+
+# =========================== KINS Settings ===================================
+kins_root_path: /home/univ/hongren/Projects/Amodal_Interactive_Segmentation/datasets/My_AIS_data/KINS
+
+# =========================== COCOA Settings ===================================
+cocoa_root_path: /mnt/data/linjunwei/AIS_data/COCOA
+
+# =========================== D2SA Settings ===================================
+d2sa_root_path: /home/univ/hongren/Projects/Amodal_Interactive_Segmentation/datasets/My_AIS_data/D2SA

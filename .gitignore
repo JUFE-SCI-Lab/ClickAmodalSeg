@@ -1,0 +1,36 @@
+# IDE
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+
+# Build
+build/
+dist/
+*.egg-info/
+*.so
+
+# Dataset
+datasets/
+COCOA/
+D2SA/
+KINS/
+
+# Checkpoints
+*.pth
+*.pt
+*.ckpt
+
+# Logs
+wandb/
+runs/
+outputs/
+logs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# System
+.DS_Store
+Thumbs.db

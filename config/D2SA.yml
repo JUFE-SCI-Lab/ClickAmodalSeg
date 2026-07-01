@@ -1,0 +1,60 @@
+INTERACTIVE_MODELS_PATH: "./weights"
+EXPS_PATH: "/home/univ/hongren/Projects/Amodal_Interactive_Segmentation/results"
+seed: 42
+VIS_PATH: "/media/chenjunjie/cdb0f1df-df9d-4704-ade1-ed1fde64603c/hongren/save_img_Interactivate"
+# VIS_PATH: "/media/chenjunjie/cdb0f1df-df9d-4704-ade1-ed1fde64603c/hongren/save_img_Interactivate/Qualitatively_Comparison/MFP"
+
+# Evaluation datasets
+GRABCUT_PATH: "/home/univ/hongren/Projects/MFP-main/datasets/data/GrabCut"
+BERKELEY_PATH: "/home/univ/hongren/Projects/MFP-main/datasets/data/Berkeley"
+DAVIS_PATH: "/home/univ/hongren/Projects/MFP-main/datasets/data/DAVIS"
+# DAVIS_SUBSET_PATH: "/media/cwlee/HDD1/datasets/InteractiveSegmentation/DAVIS_subset"
+COCO_MVAL_PATH: "/home/univ/hongren/Projects/MFP-main/datasets/data/COCO_MVal"
+COCOA_PATH: "/home/univ/hongren/Projects/Amodal_Interactive_Segmentation/datasets/My_AIS_data/COCOA"
+
+# Train datasets
+SBD_PATH: "/home/univ/hongren/Projects/MFP-main/datasets/data/SBD"
+COCO_PATH: "/media/cwlee/HDD1/datasets/InteractiveSegmentation/COCO_LVIS"
+LVIS_v1_PATH: "/media/cwlee/HDD1/datasets/InteractiveSegmentation/COCO_LVIS"
+PASCALVOC_PATH: "/media/cwlee/HDD1/datasets/InteractiveSegmentation/PascalVOC"
+
+# You can download the weights for HRNet from the repository:
+# https://github.com/HRNet/HRNet-Image-Classification
+IMAGENET_PRETRAINED_MODELS:
+  HRNETV2_W18: "/media/cwlee/HDD1/Projects/MFP/weights/pretrained/hrnetv2_w18_imagenet_pretrained.pth"
+  HRNETV2_W32: "/media/cwlee/HDD1/Projects/MFP/weights/pretrained/hrnetv2_w32_imagenet_pretrained.pth"
+  MIT_B0: "/media/cwlee/HDD1/Projects/MFP/weights/pretrained/mit_b0.pth"
+  MAE_BASE: "/media/chenjunjie/cdb0f1df-df9d-4704-ade1-ed1fde64603c/hongren/check_points/mae_pretrain_vit_base.pth"
+
+PRETRAINED_SIMPLECLICK_MODELS:
+  MAE_BASE: "/media/chenjunjie/cdb0f1df-df9d-4704-ade1-ed1fde64603c/hongren/check_points/mae_pretrain_vit_base.pth"
+
+
+# =========================== DATA Settings ======================================
+root_path: /home/univ/hongren/Projects/Amodal_Interactive_Segmentation/datasets/My_AIS_data/D2SA
+
+# =========================== AutoEncoder Settings ===============================
+AE_input_channels: 1
+code_size: 256
+NUM_CONV: 4    # 6
+CONV_DIM: 8
+NORM: ""
+NUM_CLASSES: 61
+KMEANS: 256  # 128
+MASK_THS: 1.0
+# autoencoder_path: "/media/chenjunjie/cdb0f1df-df9d-4704-ade1-ed1fde64603c/hongren/Amodal_Image_Segmentation_check_points/D2SA/AutoEncoder/D2SA_shape_prior_NewAE_edgeGT_8x8"
+autoencoder_path: "/media/chenjunjie/cdb0f1df-df9d-4704-ade1-ed1fde64603c/hongren/Amodal_Image_Segmentation_check_points/D2SA/AutoEncoder/D2SA_shape_prior_NewAE_vmfmGT"
+edge_AE_path: "/media/chenjunjie/cdb0f1df-df9d-4704-ade1-ed1fde64603c/hongren/Amodal_Image_Segmentation_check_points/D2SA/AutoEncoder/D2SA_shape_prior_NewAE_edgeGT_8x8_100.pth"
+codebook_path: /media/chenjunjie/cdb0f1df-df9d-4704-ade1-ed1fde64603c/hongren/Amodal_Image_Segmentation_check_points/D2SA/AutoEncoder
+save_AE_epoch: 10
+AE_shape: 256
+AE_NUM_CONV: 6
+log_idx: 1000
+k: 10
+
+
+# =========================== QKHead Settings ===============================
+QKHead_save_path: /media/chenjunjie/cdb0f1df-df9d-4704-ade1-ed1fde64603c/hongren/Amodal_Interactivate_Segmentation_check_points/QKHead/D2SA/D2SA_QKHead
+QKHead_epoch: 10
+QKHead_k: 10
+QKHead_path: /media/chenjunjie/cdb0f1df-df9d-4704-ade1-ed1fde64603c/hongren/Amodal_Interactivate_Segmentation_check_points/QKHead/D2SA/D2SA_QKHead_AE_bs64_ngpus2_mar1_th0.8_100.pth
