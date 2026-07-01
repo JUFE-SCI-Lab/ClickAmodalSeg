@@ -3,11 +3,12 @@
 
 
 Official code repository for the paper:
+
 [**Learning and Aligning Click-Aware Shape Prior for Interactive Amodal Instance Segmentation**](https://openaccess.thecvf.com/content/CVPR2026/papers/Chen_Learning_and_Aligning_Click-Aware_Shape_Prior_for_Interactive_Amodal_Instance_CVPR_2026_paper.pdf)
 
 [Junjie Chen, Junwei Lin, Hong Ren, Shengjie Liu, Yuming Fang, Feng Qian, Yifan Zuo]
 
-[<img src="[https://github.com/JUFE-SCI-Lab/ClickAmodalSeg/blob/main/overview.png]" alt="overview" style="zoom:50%;" />
+<img src="https://github.com/JUFE-SCI-Lab/ClickAmodalSeg/blob/main/overview.png" alt="overview" width="50%">
 
 ### Abstract
 
