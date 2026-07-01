@@ -39,11 +39,11 @@ We train the QK-Head in this stage.
 ```
 train Shape prior：
 CUDA_VISIBLE_DEVICES=7 python -m torch.distributed.launch --nproc_per_node=1 --master_port='29508' \
-train_AutoEncoder.py --dataset D2SA --batch 1 --path D2SA_seg 
+train_AutoEncoder.py --dataset D2SA --batch 1 --path D2SA_seg --augment-codebook
 
 test Shape prior ：
 CUDA_VISIBLE_DEVICES=1 python -m torch.distributed.launch --nproc_per_node=1 --master_port='29509' \
-test_AutoEncoder.py --dataset D2SA --batch 1 --data_type image --path D2SA_seg
+test_AutoEncoder.py --dataset D2SA --batch 1 --data_type image --path D2SA_seg 
 
 train QKHead：
 CUDA_VISIBLE_DEVICES=2,3 python -m torch.distributed.launch --nproc_per_node=2 --master_port='29502' \
