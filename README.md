@@ -3,7 +3,8 @@
 
 
 Official code repository for the paper:
-[**Learning and Aligning Click-Aware Shape Prior for Interactive Amodal Instance Segmentation**]((https://openaccess.thecvf.com/content/CVPR2026/papers/Chen_Learning_and_Aligning_Click-Aware_Shape_Prior_for_Interactive_Amodal_Instance_CVPR_2026_paper.pdf))
+[**Learning and Aligning Click-Aware Shape Prior for Interactive Amodal Instance Segmentation**](https://openaccess.thecvf.com/content/CVPR2026/papers/Chen_Learning_and_Aligning_Click-Aware_Shape_Prior_for_Interactive_Amodal_Instance_CVPR_2026_paper.pdf)
+
 [Junjie Chen, Junwei Lin, Hong Ren, Shengjie Liu, Yuming Fang, Feng Qian, Yifan Zuo]
 
 [<img src="D:\Paper Project\AIS_912\overview.png" alt="overview" style="zoom:50%;" />
@@ -50,8 +51,7 @@ CUDA_VISIBLE_DEVICES=6 python -m torch.distributed.launch --nproc_per_node=1 --m
 test_QKHead.py --dataset D2SA --batch 1 --data_type image --path D2SA_seg
 ```
 
-Pre-train weights could be found in [weights](通过网盘分享的文件：weights.zip
-链接: https://pan.baidu.com/s/1_qPw7ntTYDEXvJenQ98h5w?pwd=4ffj 提取码: 4ffj).
+Pre-train weights could be found in [weights](https://pan.baidu.com/s/1_qPw7ntTYDEXvJenQ98h5w?pwd=4ffj) (Password: `4ffj`).
 
 #### **Train**
 
@@ -65,8 +65,7 @@ python train.py models/iter_mask/plainvit_base448_d2sa_itermask_prevMod.py \
 --batch-size=4
 ```
 
- ClickAmodalSeg model weights could be found in [weights](通过网盘分享的文件：weights.zip
-链接: https://pan.baidu.com/s/1_qPw7ntTYDEXvJenQ98h5w?pwd=4ffj 提取码: 4ffj).
+ ClickAmodalSeg model weights could be found in [weights](https://pan.baidu.com/s/1_qPw7ntTYDEXvJenQ98h5w?pwd=4ffj) (Password: `4ffj`).
 
 #### **Test**
 
