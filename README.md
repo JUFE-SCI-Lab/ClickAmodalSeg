@@ -70,11 +70,11 @@ python train.py models/iter_mask/plainvit_base448_d2sa_itermask_prevMod.py \
 
  ClickAmodalSeg model weights could be found in [weights](https://pan.baidu.com/s/1_qPw7ntTYDEXvJenQ98h5w?pwd=4ffj) (Password: `4ffj`).
 
- | Dataset | mIoUfull(5clicks) | mIoUocc(5clicks) | ClickAmodalSeg                                               |
+| Dataset | mIoUfull(5clicks) | mIoUocc(5clicks) | ClickAmodalSeg                                               |
 | ------- | ----------------- | ---------------- | ------------------------------------------------------------ |
-| KINS    | 91.97             | 77.72            | [weights](https://pan.baidu.com/s/1_qPw7ntTYDEXvJenQ98h5w?pwd=4ffj)(KINS_model) |
-| COCOA   | 95.17             | 62.67            | [weights](https://pan.baidu.com/s/1_qPw7ntTYDEXvJenQ98h5w?pwd=4ffj)(COCOA_model) |
-| D2SA    | 90.48             | 58.30            | [weights](https://pan.baidu.com/s/1_qPw7ntTYDEXvJenQ98h5w?pwd=4ffj)(D2SA_model) |
+| KINS    | 91.97             | 77.72            | [weights](https://pan.baidu.com/s/1_qPw7ntTYDEXvJenQ98h5w?pwd=4ffj)(KINS_model), [config](https://raw.githubusercontent.com/JUFE-SCI-Lab/ClickAmodalSeg/main/config/KINS.yml) |
+| COCOA   | 95.17             | 62.67            | [weights](https://pan.baidu.com/s/1_qPw7ntTYDEXvJenQ98h5w?pwd=4ffj)(COCOA_model), [config](https://raw.githubusercontent.com/JUFE-SCI-Lab/ClickAmodalSeg/main/config/COCOA.yml) |
+| D2SA    | 90.48             | 58.30            | [weights](https://pan.baidu.com/s/1_qPw7ntTYDEXvJenQ98h5w?pwd=4ffj)(D2SA_model), [config](https://raw.githubusercontent.com/JUFE-SCI-Lab/ClickAmodalSeg/main/config/D2SA.yml) |
 
 
 
